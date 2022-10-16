@@ -3,17 +3,17 @@ import React from 'react';
 
 const Header = ({ handleToggleDarkMode }) => {
 	return (
-		<div className='header'>
+		<div className = 'header'>
 			<h1>Notes</h1>
-			<button
-				onClick={() =>
+			<button 
+				onClick = {() =>
 					handleToggleDarkMode(
 						(previousDarkMode) => !previousDarkMode
 					)
 				}
-				className='save'
+				className = 'save'
 			>
-				Toggle Mode
+				Night Mode
 			</button>
 		</div>
 	);
